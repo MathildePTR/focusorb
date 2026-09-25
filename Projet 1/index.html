@@ -1,42 +1,130 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Salut</title>
+	<title>FocusOrb</title>
 </head>
 <body>
 	<header>
-		<nav>
-		<a href="index.html">Features</a>
-		<a href="index.html">Pricing</a>
-		<a href="index.html">Sign in</a>
+		<p><strong>FocusOrb</strong></p>
+		 <nav aria-label="Main">
+		<a href="#features">Features</a>
+		<a href="#pricing">Pricing</a>
+		<a href="#sign-in">Sign in</a>
 	</nav>
 	</header>
-	<hero>
-		<h1>FocusOrb Deep Work timer for Builders</h1>
-		<p>Boost your productivity with our distraction-free focus timer.
+
+	<main>
+
+	<section aria-labelledby="hero-title"></section>>
+		<h1 id="hero-title">FocusOrb Deep Work timer for Builders</h1>
+		<p>Boost your productivity with our distraction-free focus timer.</p>
+		<p>Use it to stay focused and get more done in less time.</p>
 			<span> 
-				<a href="index.html">Get started</a> 
+				<a href="#waitlist">Join the waitlist</a> 
 			</span>
-		</p>
-	</hero>
-	<features>
-		<h2>Features</h2>
+		
+	</section>
+
+
+	<section aria-labelledby="features-title">
+		<h2 id="features-title">Features</h2>
 		<ul>
-			<li><strong>Focus session timer</strong> Get focused on your tasks without distractions.</li>
-			<li><strong>Shared team dashboard</strong> Collaborate and track your team's progress together.</li>
-			<li><strong>Progress tracking and analytics</strong> Visualize your productivity trends over time.</li>
-			<li><strong>Weekly progress report</strong> Review your achievements and identify areas for improvement.</li>
+			<h3><strong>Focus session timer</strong></h3> 
+			<p> focused on your tasks without distractions.</p>
+			<h3><strong>Shared team dashboard</strong></h3> 
+			<p>Collaborate and track your team's progress together.</p>
+			<h3><strong>Progress tracking and analytics</strong></h3> 
+			<p>Visualize your productivity trends over time.</p>
+			<h3><strong>Weekly progress report</strong></h3> 
+			<p>Review your achievements and identify areas for improvement.</p>
 		</ul>
-	</features>
-	<call to action>
-		<h2>Join the beta</h2>
-		<p>Start using FocusOrb today and take control of your workday.</p>
-		<a href="index.html">Reserve your spot</a>
-	</call to action>
+	</section>
+
+
+	<section aria-labelledby="voices-title">
+  <h2 id="voices-title">What early users say</h2>
+
+  <blockquote>
+    <p>Our weekly standups shrank from 45 minutes to 10 once everyone had a shared focus log.</p>
+    <cite>Zara, climate marketplace founder</cite>
+  </blockquote>
+
+  <blockquote>
+    <p>Investors stopped asking for status decks mid-sprint. The weekly report handled it.</p>
+    <cite>Noah, AI ops lead</cite>
+  </blockquote>
+
+  <blockquote>
+    <p>Three months in, meeting debt is down 40%. That is the only metric the board cares about.</p>
+    <cite>Mei, Head of Ops</cite>
+  </blockquote>
+</section>
+
+<section id="pricing" aria-labelledby="pricing-title">
+  <h2 id="pricing-title">Simple pricing</h2>
+
+  <dl>
+    <dt>Explorer</dt>
+    <dd>Free forever. Up to 3 team members. Core focus timer and daily log.</dd>
+
+    <dt>Collective</dt>
+    <dd>$12 per seat per month. Unlimited members. Shared dashboard and automated weekly reports.</dd>
+  </dl>
+</section>
+
+<section aria-labelledby="waitlist-title">
+  <h2 id="waitlist-title">Join the waitlist</h2>
+  <p>Be the first to experience FocusOrb and get early access to our features.</p>
+  <form>
+	<fieldset><legend>Your details</legend>
+		
+		<label for="Full name">Full name</label>
+		<input type="text" id="Full name" name="Full name" autocomplete="name" required>
+
+		<label for="Work email">Email</label>
+		<input type="email" id="Work email" name="Work email" autocomplete="email" required>
+
+		<label for="Your role">Your role</label>
+		<select id="Your role" name="Your role" autocomplete="organization-title" required>
+			<option value="">Select a role</option>
+			<option value="manager">Founder</option>
+			<option value="developer">Operator</option>
+			<option value="designer">Engineer</option>
+			<option value="other">Designer</option>
+		</select>
+
+		<label for="message">Tell us about your team (optional)</label>
+		<textarea id="message" name="message" rows="3"></textarea>
+
+	
+		<p id="Beta acknowledgment">
+			FocusOrb is currently in beta. By joining the waitlist, you acknowledge that you may encounter bugs and that features may change.
+		</p>
+		<label>
+		<input type="checkbox" name="Beta acknowledgment" aria-describedby="beta-info" required />
+  I     I understand the beta obligations.
+        </label>
+
+
+	</fieldset>
+	<button type="submit">Reserve beta seat</button>
+  </form>
+</section>
+
+
+	</main>
+
+
 	<footer>
-		<p><italic>FocusOrb 2026</italic></p>
-	</footer>
+  <nav aria-label="Footer">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <p><small> &copy; 2026 FocusOrb</small></p>
+    </footer>
+
 	
 </body>
 </html>
+
